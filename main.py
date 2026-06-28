@@ -77,6 +77,9 @@ else:
         case "delete":
             for i in data:
                 if i["id"] == int(sys.argv[2]):
+                    for j in data:
+                        if j["id"] > i["id"]:
+                            j["id"] -= 1
                     data.remove(i)
             save_data(data, file_path)
             print(f"Deleted task {sys.argv[2]}")
