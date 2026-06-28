@@ -30,6 +30,17 @@ python main.py
 
 A `tasks.json` file will be created automatically on first run.
 
+### Optional: run as `task-cli`
+
+If you'd like to use `task-cli` instead of `python main.py`, you can set it up manually:
+
+```bash
+chmod +x main.py
+sudo ln -s /full/path/to/main.py /usr/local/bin/task-cli
+```
+
+Replace `/full/path/to/main.py` with the absolute path to the file.
+
 ---
 
 ## Usage
